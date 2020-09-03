@@ -8,11 +8,27 @@
     <artifactId>serein</artifactId>
     <version>1.0</version>
 
+    <properties>
+        <aquiver.version>1.0-BETA</aquiver.version>
+        <zookpeeper.version>3.6.1</zookpeeper.version>
+        <kafka.version>2.6.0</kafka.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.aquiver</groupId>
             <artifactId>aquiver</artifactId>
-            <version>1.0-BETA</version>
+            <version>${aquiver.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${zookpeeper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
         </dependency>
     </dependencies>
 </project>
